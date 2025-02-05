@@ -29,7 +29,7 @@ app.use(express.json());
     app.use("/auth", userRoutes);
 
     // Маршруты
-    app.use("/", waterRoutes);
+    app.use("/api/water", waterRoutes);
 
     // Интеграция анализа данных с OpenAI
     app.get("/analyze", async (req, res) => {
